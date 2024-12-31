@@ -4,6 +4,8 @@ Welcome to my personal portfolio website! This site showcases my projects, skill
 
 ## 🔗 Deployed URL
 
+https://shreya-masta.onrender.com/
+
 ## 🚀 Features
 
 - **Project Showcase**: A collection of my most impactful projects, complete with source code.
