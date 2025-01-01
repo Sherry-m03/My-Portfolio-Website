@@ -40,7 +40,7 @@ export default function CineLog() {
           setIsLoading(true);
           setError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
+            `https://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
             { signal: controller.signal }
           );
           if (!res.ok) throw new Error("Something went wrong");
@@ -393,7 +393,7 @@ function MovieDetails({
         try {
           setIsLoading(true);
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedID}`
+            `https://www.omdbapi.com/?apikey=${KEY}&i=${selectedID}`
           );
           if (!res.ok) throw new Error("Something went wrong");
           const data = await res.json();

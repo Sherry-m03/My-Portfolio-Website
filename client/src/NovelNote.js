@@ -27,11 +27,11 @@ function Home() {
     window.scrollTo(0, 0);
   }, []);
   const recom = [
-    "http://books.google.com/books/content?id=FjjCDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    "http://books.google.com/books/content?id=yng_CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    "http://books.google.com/books/content?id=MZMJEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    "http://books.google.com/books/content?id=cyffaasy3xsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    "http://books.google.com/books/content?id=rxEvDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "https://books.google.com/books/content?id=FjjCDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "https://books.google.com/books/content?id=yng_CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "https://books.google.com/books/content?id=MZMJEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "https://books.google.com/books/content?id=cyffaasy3xsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "https://books.google.com/books/content?id=rxEvDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
   ];
 
   return (
@@ -119,11 +119,11 @@ function Library() {
   const [isAdding, setIsAdding] = useState(false);
 
   const [Carousel, setCarousel] = useState([
-    "http://books.google.com/books/content?id=pJjS9cKPr9oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    "http://books.google.com/books/content?id=5iTebBW-w7QC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-    "http://books.google.com/books/content?id=PGR2AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    "http://books.google.com/books/content?id=gebvDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-    "http://books.google.com/books/content?id=1EiJAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "https://books.google.com/books/content?id=pJjS9cKPr9oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "https://books.google.com/books/content?id=5iTebBW-w7QC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "https://books.google.com/books/content?id=PGR2AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "https://books.google.com/books/content?id=gebvDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "https://books.google.com/books/content?id=1EiJAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
   ]);
 
   const [query, setQuery] = useState("");
