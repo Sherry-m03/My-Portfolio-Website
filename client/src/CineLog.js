@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import ImageCarousel from "./ImageCarousel";
 import StarRating from "./StarRating";
-const KEY = "f84fc31d";
+const KEY = process.env.REACT_APP_OMDB_API_KEY;
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
