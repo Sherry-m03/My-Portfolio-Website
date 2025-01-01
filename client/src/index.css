@@ -157,7 +157,7 @@ html {
   font-family: Roboto Mono;
 }
 
-.navlinks a::after {
+.navlinks button::after {
   content: "";
   position: absolute;
   background-color: #c73659;
@@ -168,11 +168,11 @@ html {
   transition: 300ms;
 }
 
-.navlinks a:hover {
+.navlinks button:hover {
   color: #c73659;
 }
 
-.navlinks a:hover:after {
+.navlinks button:hover:after {
   width: 80%;
 }
 
@@ -320,6 +320,14 @@ html {
   background-color: white;
   text-align: center;
   grid-column: span 3;
+}
+
+#proj-img {
+  transition: transform 0.3s;
+}
+
+#proj-img:hover {
+  transform: scale(1.05);
 }
 
 .view img {

@@ -5,7 +5,7 @@ function ProjectPortfolio({ projImgName, projLink, projClassName }) {
   return (
     <div className={projClassName}>
       <Link to={projLink}>
-        <img src={projImgName} alt=""></img>
+        <img id="proj-img" src={projImgName} alt=""></img>
       </Link>
     </div>
   );
