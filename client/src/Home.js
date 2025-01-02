@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 function Home() {
   const scrollToAbout = () => {
@@ -25,6 +25,11 @@ function Home() {
     });
   };
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="home">
       <div class="menu">
@@ -32,12 +37,15 @@ function Home() {
       </div>
 
       <div className="navbar">
-        <div className="navlinks">
+        <button className="menu-icon" onClick={toggleMenu}>
+          ☰
+        </button>
+        <ul className={`navlinks ${isMenuOpen ? "active" : ""}`}>
           <button onClick={scrollToContact}>Contact</button>
           <button onClick={scrollToPortfolio}>Portfolio</button>
           <button onClick={scrollToAbout}>About</button>
           <button>Home</button>
-        </div>
+        </ul>
         <div className="logo">
           <h2>Shreya Masta</h2>
         </div>

@@ -13,27 +13,28 @@ function About() {
           </div>
           <div>
             <span>
-              Hi, I’m Shreya, a web developer with a passion for transforming
-              ideas into high-performing, visually engaging websites. I’m driven
-              by a love for problem-solving and an eye for detail, ensuring each
-              project I work on combines seamless functionality with an
-              intuitive user experience. Through personal projects and
-              continuous self-study, I’ve built a solid foundation in coding
-              best practices and problem-solving. I’m passionate about creating
-              meaningful, user-friendly digital experiences and look forward to
-              collaborating on projects where I can apply my skills, grow as a
-              developer, and make a positive impact.
+              Hi, I’m Shreya, a dedicated full-stack web developer passionate
+              about transforming ideas into intuitive and high-performing
+              digital solutions. I specialize in creating user-friendly
+              applications using technologies like JavaScript, Node.js, React,
+              and PostgreSQL. With a strong foundation built through hands-on
+              projects, I’ve honed my skills in front-end and back-end
+              development, responsive design, and API integration. My focus is
+              on delivering seamless functionality and engaging user
+              experiences, and I’m always excited to learn and implement the
+              latest industry practices.
             </span>
             <br></br>
             <br></br>
             <span>
-              Just as I enjoy diving into different coding languages, I also
-              love exploring spoken languages like Korean and Thai. My expertise
-              spans a variety of technologies, including JavaScript, Node.js,
-              PostgreSQL and React, and I’m constantly expanding my skills to
-              stay on top of industry trends. I’m excited to bring my
-              creativity, attention to detail, and enthusiasm for learning to
-              every new project!
+              Beyond coding, I enjoy exploring spoken languages like Korean and
+              Thai, reflecting my curiosity and passion for continuous learning.
+              I believe that creativity and problem-solving go hand in hand, and
+              I strive to bring both to every project I undertake. With a
+              Bachelor’s degree from IIIT Naya Raipur and a proactive approach
+              to learning, I’m eager to contribute my skills to meaningful
+              projects, collaborate with innovative teams, and grow as a
+              developer. Let’s connect and build something amazing together!
             </span>
           </div>
         </div>
