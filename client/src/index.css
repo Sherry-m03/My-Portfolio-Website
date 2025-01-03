@@ -2406,6 +2406,8 @@ html {
     flex-direction: column;
     height: auto;
     margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
   }
 
   .navbar {
@@ -2571,7 +2573,7 @@ html {
   /*NovelNote*/
   .novelnote {
     height: 100vh;
-    width: 97vw;
+    width: 100vw;
     background-image: url("../public/assets/nn-bg-mobile.png");
     background-size: cover;
     background-position: center;
