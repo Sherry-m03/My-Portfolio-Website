@@ -1560,7 +1560,8 @@ html {
   left: 0px;
   bottom: -900px;
 
-  background: url(../public/people-2591928.jpg);
+  background: url(../public/people-2591928.jpg) no-repeat center center fixed;
+  background-color: #010000;
   background-size: cover;
 }
 
