@@ -4,32 +4,32 @@ import ProjectPortfolio from "./ProjectPortfolio";
 function Portfolio() {
   const projects = [
     {
-      projImgName: "NN-project.png",
+      projImgName: "NN-project.jpg",
       projLink: "/NovelNote",
       classname: "project-big",
     },
     {
-      projImgName: "BIC-project.png",
+      projImgName: "BIC-project.jpg",
       projLink: "/BICulture",
       classname: "project-big",
     },
     {
-      projImgName: "WorldLit-project.png",
+      projImgName: "WorldLit-project.jpg",
       projLink: "/WorldLit",
       classname: "project-big",
     },
     {
-      projImgName: "CineLog-project.png",
+      projImgName: "CineLog-project.jpg",
       projLink: "/CineLog",
       classname: "project-big",
     },
     {
-      projImgName: "QT-project.png",
+      projImgName: "QT-project.jpg",
       projLink: "/TodoList",
       classname: "project-big",
     },
     {
-      projImgName: "PlanPack-project.png",
+      projImgName: "PlanPack-project.jpg",
       projLink: "/PlanPack",
       classname: "project-big",
     },

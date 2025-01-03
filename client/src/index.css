@@ -653,7 +653,7 @@ html {
   top: -35px;
   left: -110px;
   border-radius: 10px;
-  background-image: url("../public/assets/Todolist-bg.png");
+  background-image: url("../public/assets/Todolist-bg.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -2333,7 +2333,6 @@ html {
     animation-timing-function: ease-in;
   }
 
-  /* Navbar */
   body {
     flex-direction: column;
     height: auto;
@@ -2356,10 +2355,16 @@ html {
     background-color: #eeeeee;
     width: 100%;
     padding: 10px 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
   }
 
   .navlinks.active {
     display: flex;
+    max-height: 300px;
+    opacity: 1;
   }
 
   .navlinks li {
@@ -2389,7 +2394,6 @@ html {
     border-radius: 50%;
   }
 
-  /* About Section */
   #about {
     flex-direction: column;
     padding: 1rem;
@@ -2407,10 +2411,9 @@ html {
   }
 
   .about-head h2 {
-    font-size: 2rem; /* Adjust heading size */
+    font-size: 2rem;
   }
 
-  /* Portfolio Section */
   .portfolio {
     background-color: #eeeeee;
     margin: 0;
@@ -2481,7 +2484,6 @@ html {
     background: #c73659;
   }
 
-  /* Quotes and Miscellaneous */
   .quote1 {
     padding: 1rem;
     height: 30vh;
