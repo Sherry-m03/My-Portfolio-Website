@@ -26,6 +26,7 @@ function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   const recom = [
     "https://books.google.com/books/content?id=FjjCDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     "https://books.google.com/books/content?id=yng_CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -37,17 +38,8 @@ function Home() {
   return (
     <div className="novelnote">
       <img id="nn-front-img" src="nn-front.png" alt="" />
-      <h1 id="nn-head">Novel</h1>
-      <h1
-        style={{
-          top: "195px",
-          left: "625px",
-          color: "red",
-        }}
-        id="nn-head"
-      >
-        Note
-      </h1>
+      <h1 className="nn-head">Novel</h1>
+      <h1 className="nn-head-note nn-head">Note</h1>
       <Link to="Library">
         <button id="nn-home-btn">Get Started</button>
       </Link>
@@ -77,6 +69,20 @@ function Library() {
   const [description, setDescription] = useState("");
   const [authors, setAuthors] = useState([]);
   const [image, setImage] = useState([]);
+
+  const [isMobile, setIsMobile] = useState(false);
+  const [slidesPerView, setslidesPerView] = useState(5);
+
+  useEffect(() => {
+    const updateSlideDepth = () => {
+      const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
+      const newSPV = isSmallScreen ? 4 : 5;
+      setslidesPerView(newSPV);
+    };
+    updateSlideDepth();
+    window.addEventListener("resize", updateSlideDepth);
+    return () => window.removeEventListener("resize", updateSlideDepth);
+  }, []);
 
   const [Books, setBooks] = useState([
     {
@@ -163,7 +169,6 @@ function Library() {
         author: authors[0],
       };
 
-      // Add the book to the array
       setCarousel((c) => [...c, book.volumeInfo.imageLinks?.thumbnail]);
       setBooks((prevBooks) => [...prevBooks, newBook]);
       setData("");
@@ -196,7 +201,6 @@ function Library() {
           </h2>
           <h3
             style={{
-              width: "60rem",
               fontFamily: "itim",
               fontWeight: "400",
               fontSize: "1.8rem",
@@ -244,24 +248,7 @@ function Library() {
           )}
         </div>
         <div id="nn-book-details">
-          <div
-            style={{
-              display: "flex",
-              columnGap: "20px",
-              width: "18vw",
-              fontFamily: "roboto Mono",
-              alignItems: "center",
-              justifyContent: "flex-start",
-            }}
-          >
-            <div
-              style={{
-                height: "50px",
-                width: "50px",
-                borderRadius: "50%",
-                backgroundColor: "#303030",
-              }}
-            ></div>
+          <div className="nn-details">
             <h3>{Books[activeIndex]?.author}</h3>
           </div>
           <div style={{ fontFamily: "itim" }}>
@@ -273,17 +260,17 @@ function Library() {
         <ImageCarousel
           Image={Carousel}
           getItemContent={(image, index) => ({
-            src: image, // Image URL from the array
-            alt: `Image ${index}`, // Generate alt text dynamically
-            id: index, // Use index as a unique identifier
+            src: image,
+            alt: `Image ${index}`,
+            id: index,
           })}
-          slidesPerView={"5"}
+          slidesPerView={slidesPerView}
           Imgwidth={"180px"}
           Imgheight={"270px"}
           slideShadow={"-20px 20px 15px rgb(0,0,0,0.3)"}
           SwiperSlideWidth={"27rem"}
           SwiperSlideHeight={"42rem"}
-          containerMaxWidth={"1450px"}
+          containerMaxWidth={"100vw"}
           slideImgBorderLeft={"4px solid #333333"}
           slideImgBorderRight={"2px solid wheat"}
           slideRotate={0}

@@ -23,6 +23,7 @@ export default function WorldLit() {
         <div>
           <div className="wl-display">
             <div className="wl-home">
+              <div className="wl-home-overlay"></div>
               <h2 className="wl-head">WorldLit</h2>
             </div>
             <div className="wl-carousel">
