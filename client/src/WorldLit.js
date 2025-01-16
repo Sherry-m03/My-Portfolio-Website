@@ -65,8 +65,8 @@ export default function WorldLit() {
               </div>
             </div>
           </div>
-          <div id="wl-footer-grad"></div>
-          <div className="wl-footer"></div>
+          {/* <div id="wl-footer-grad"></div>
+          <div className="wl-footer"></div> */}
         </div>
       ) : (
         <div id="wl-user-map">
