@@ -12,17 +12,17 @@ function TodoList() {
       listname: "Personal",
       listItems: [
         { source: 5534233, id: 12353, content: "Read a chapter of a book" },
-        { source: 5534233, id: 14353, content: "Read adjd" },
-        { source: 5534233, id: 16357, content: "Read a fdadfsd of a book" },
+        { source: 5534233, id: 14353, content: "Clean room" },
+        { source: 5534233, id: 16357, content: "Dance Class at 5PM" },
         {
           source: 5534233,
           id: 18261,
-          content: "Read asfyajdk chapter of a book",
+          content: "Finish Math Homework",
         },
         {
           source: 5534233,
           id: 13124,
-          content: "Read a chapter of a csfasfadfs",
+          content: "Finish Science project",
         },
       ],
     },
