@@ -4,13 +4,6 @@ import ProjectPortfolio from "./ProjectPortfolio";
 function Portfolio() {
   const projects = [
     {
-      projImgName: "AspireAlly-project.png",
-      projLink: "https://aspireally.onrender.com/",
-      classname: "project-big",
-      details:
-        "A mentorship matching platform that connects mentors and mentees based on their skills and interests. It helps users find suitable mentorship opportunities and manage their profiles.",
-    },
-    {
       projImgName: "FlavorBeat-project.png",
       projLink: "https://flavorbeat.onrender.com/",
       classname: "project-big",
@@ -18,11 +11,18 @@ function Portfolio() {
         "A mood-based recommendation platform for music and cuisines tailored to user emotions and time of the day.",
     },
     {
-      projImgName: "NN-project.jpg",
-      projLink: "/NovelNote",
+      projImgName: "NN-project.png",
+      projLink: "https://novelnote.onrender.com/",
       classname: "project-big",
       details:
         "An app for tracking reading history and managing book details. It integrates data from the Google Books API to provide users with book information.",
+    },
+    {
+      projImgName: "AspireAlly-project.png",
+      projLink: "https://aspireally.onrender.com/",
+      classname: "project-big",
+      details:
+        "A mentorship matching platform that connects mentors and mentees based on their skills and interests. It helps users find suitable mentorship opportunities and manage their profiles.",
     },
     {
       projImgName: "BIC-project.jpg",

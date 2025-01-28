@@ -8,6 +8,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import ImageCarousel from "./ImageCarousel";
+const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
 export default function NovelNote() {
   return (
@@ -140,7 +141,7 @@ function Library() {
 
       // Fetch data from Google Books API
       const resBooks = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=${q}`
+        `https://www.googleapis.com/books/v1/volumes?q=${q}&key=${API_KEY}`
       );
       const dataBooks = await resBooks.json();
       setData(dataBooks.items); // set data to state
@@ -175,9 +176,6 @@ function Library() {
       setIsAdding(false);
     }
   }
-
-  console.log(Carousel);
-
   const handleSlideChange = (swiper) => {
     const activeIndex = swiper.activeIndex;
     setActiveIndex(activeIndex);
