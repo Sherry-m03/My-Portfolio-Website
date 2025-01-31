@@ -372,7 +372,7 @@ function TodoList() {
                   className="tdl-start-btn"
                 >
                   <h3>Get Started</h3>
-                  <img
+                  <img loading="lazy" 
                     style={{
                       height: "35px",
                       width: "35px",
@@ -427,7 +427,7 @@ function TodoList() {
                         onClick={(event) => handleButtonClick(event, list.id)}
                         ref={editInput}
                       >
-                        <img
+                        <img loading="lazy" 
                           style={{
                             height: "25px",
                             width: "25px",
@@ -473,7 +473,7 @@ function TodoList() {
                           toggleButtonVisibility(item.id, item.content)
                         }
                       >
-                        <img
+                        <img loading="lazy" 
                           style={{
                             height: "25px",
                             width: "25px",
@@ -487,7 +487,7 @@ function TodoList() {
                         className="delete"
                         onClick={() => handleDeleteItem(item.id)}
                       >
-                        <img
+                        <img loading="lazy" 
                           style={{
                             height: "25px",
                             width: "25px",
@@ -529,7 +529,7 @@ function TodoList() {
                     type="submit"
                     onClick={(e) => handleNewClick(e)}
                   >
-                    <img
+                    <img loading="lazy" 
                       style={{
                         height: "25px",
                         width: "25px",
@@ -544,7 +544,7 @@ function TodoList() {
             ) : (
               <div>
                 <button>
-                  <img
+                  <img loading="lazy" 
                     onClick={() => setIsAdding(true)} // Toggle adding state
                     id="add-new-img"
                     src="/plus-square-icon.png" // Correct path for public folder

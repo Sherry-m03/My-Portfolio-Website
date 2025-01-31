@@ -9,7 +9,7 @@ function ProjectPortfolio({
 }) {
   return (
     <div className={projClassName}>
-      <img className="proj-img" src={projImgName} alt=""></img>
+      <img loading="lazy"  className="proj-img" src={projImgName} alt=""></img>
       <Link to={projLink}>
         <div className="block-overlay">
           <div className="block-overlay-text">{projDetails}</div>

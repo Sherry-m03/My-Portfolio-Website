@@ -31,6 +31,7 @@ export default function WorldLit() {
                 <h3>Get Started</h3>
                 <div id="rainbow-arrow-wl">
                   <img
+                    loading="lazy"
                     style={{
                       height: "35px",
                       width: "35px",
@@ -1366,6 +1367,7 @@ function WLNavBar() {
           onClick={Addmember}
         >
           <img
+            loading="lazy"
             style={{
               height: "45px",
               width: "45px",

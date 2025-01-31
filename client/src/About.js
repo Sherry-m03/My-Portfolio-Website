@@ -9,9 +9,9 @@ function About() {
         </div>
         <div className="about-info">
           <div>
-            <img src="woman-img.png" alt="" />
+            <img loading="lazy" src="woman-img.png" alt="" />
           </div>
-          <div>
+          <div id="about-span">
             <span>
               Hi, I’m Shreya, a dedicated full-stack web developer passionate
               about transforming ideas into intuitive and high-performing

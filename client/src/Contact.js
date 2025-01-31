@@ -28,11 +28,11 @@ export default function Contact() {
             </div>
             <div className="portC-screen-body-item">
               <div id="contact-info">
-                <img id="contact-icon" src="mail-icon.png"></img>
+                <img loading="lazy"  id="contact-icon" src="mail-icon.png"></img>
                 <p id="contact-details">shreyamasta99@gmail.com</p>
               </div>
               <div id="contact-info">
-                <img id="contact-icon" src="linkedin-icon.png"></img>
+                <img loading="lazy"  id="contact-icon" src="linkedin-icon.png"></img>
                 <a
                   href="https://www.linkedin.com/in/shreya-masta/"
                   id="contact-details"
@@ -41,7 +41,7 @@ export default function Contact() {
                 </a>
               </div>
               <div id="contact-info">
-                <img id="contact-icon" src="github-icon.png"></img>
+                <img loading="lazy"  id="contact-icon" src="github-icon.png"></img>
                 <a href="https://github.com/Sherry-m03" id="contact-details">
                   /Sherry-m03
                 </a>

@@ -29,6 +29,7 @@ function DiceGame() {
         <div className="dice">
           <h3>Player 1</h3>
           <img
+            loading="lazy"
             className="img1"
             src={`dice${player1Dice}.png`}
             alt={`Player 1 rolled a ${player1Dice}`}
@@ -38,6 +39,7 @@ function DiceGame() {
         <div className="dice">
           <h3>Player 2</h3>
           <img
+            loading="lazy"
             className="img2"
             src={`dice${player2Dice}.png`}
             alt={`Player 2 rolled a ${player2Dice}`}

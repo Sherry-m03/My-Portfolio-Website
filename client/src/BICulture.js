@@ -284,7 +284,7 @@ function Home({ blogs, setBlogs }) {
           {HomeBlogs.map((blog, index) => {
             return (
               <div id={`bic-bl${index}`} key={blog.id}>
-                <img
+                <img loading="lazy" 
                   style={
                     index === 0
                       ? {
@@ -379,7 +379,7 @@ function ViewAll({ blogs, setBlogs }) {
               key={blog.id}
             >
               {console.log(blog.image)}
-              <img
+              <img loading="lazy" 
                 src={
                   blog.image && blog.image[0] // Check if `image` and `image[0]` exist
                     ? blog.image[0].startsWith("http")
@@ -430,7 +430,7 @@ function ViewDetails({ blogs }) {
           return (
             <div key={b.id}>
               {console.log("Blogs:", b.image[0])}
-              <img
+              <img loading="lazy" 
                 style={{ width: "100vw", height: "500px", objectFit: "cover" }}
                 src={
                   b.image && b.image[0] // Check if `image` and `image[0]` exist

@@ -38,7 +38,7 @@ function Home() {
 
   return (
     <div className="novelnote">
-      <img id="nn-front-img" src="nn-front.png" alt="" />
+      <img loading="lazy"  id="nn-front-img" src="nn-front.png" alt="" />
       <h1 className="nn-head">Novel</h1>
       <h1 className="nn-head-note nn-head">Note</h1>
       <Link to="Library">
@@ -50,7 +50,7 @@ function Home() {
         {recom.map((r, index) => {
           return (
             <div>
-              <img
+              <img loading="lazy" 
                 style={{ height: "190px", width: "130px" }}
                 id={`nn-recomm-img-shadow${index}`}
                 src={r}

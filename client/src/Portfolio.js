@@ -17,20 +17,20 @@ function Portfolio() {
       details:
         "An app for tracking reading history and managing book details. It integrates data from the Google Books API to provide users with book information.",
     },
-    {
-      projImgName: "AspireAlly-project.png",
-      projLink: "https://aspireally.onrender.com/",
-      classname: "project-big",
-      details:
-        "A mentorship matching platform that connects mentors and mentees based on their skills and interests. It helps users find suitable mentorship opportunities and manage their profiles.",
-    },
-    {
-      projImgName: "BIC-project.jpg",
-      projLink: "/BICulture",
-      classname: "project-big",
-      details:
-        "A blogging application focused on global cuisines. It allows users to create and manage posts about food cultures.",
-    },
+    // {
+    //   projImgName: "AspireAlly-project.png",
+    //   projLink: "https://aspireally.onrender.com/",
+    //   classname: "project-big",
+    //   details:
+    //     "A mentorship matching platform that connects mentors and mentees based on their skills and interests. It helps users find suitable mentorship opportunities and manage their profiles.",
+    // },
+    // {
+    //   projImgName: "BIC-project.jpg",
+    //   projLink: "/BICulture",
+    //   classname: "project-big",
+    //   details:
+    //     "A blogging application focused on global cuisines. It allows users to create and manage posts about food cultures.",
+    // },
     {
       projImgName: "WorldLit-project.jpg",
       projLink: "/WorldLit",

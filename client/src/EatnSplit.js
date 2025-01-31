@@ -107,7 +107,7 @@ function EatnSplit() {
                     }`}
                   >
                     <div className="ens-friend-img">
-                      <img src={friend.image} alt=""></img>
+                      <img loading="lazy"  src={friend.image} alt=""></img>
                     </div>
                     <div>
                       <h3>{friend.name}</h3>

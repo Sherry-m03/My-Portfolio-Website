@@ -116,53 +116,53 @@ export default function CineLog() {
               </div>
             ) : (
               <div className="cineL-disp">
-                <img
+                <img loading="lazy" 
                   id="cl-head-img"
                   src="https://cdn.pixabay.com/photo/2022/09/22/00/42/mountains-7471423_1280.jpg"
                   alt=""
                 ></img>
-                <img
+                <img loading="lazy" 
                   id="cl-head-img"
                   src="https://cdn.pixabay.com/photo/2022/08/25/17/02/fantasy-7410809_1280.jpg"
                   alt=""
                 ></img>
                 <div id="cl-movies-disp">
-                  <img
+                  <img loading="lazy" 
                     className="cl-movie-start"
                     src="https://m.media-amazon.com/images/M/MV5BMzgxZTNhYjAtYmM1OC00NjVlLThiYTAtZmFjYjQwOTZiMjcyXkEyXkFqcGdeQXVyMjQ5NjgwMjA@._V1_SX300.jpg"
                     alt=""
                   ></img>
-                  <img
+                  <img loading="lazy" 
                     className="cl-movie-img"
                     src="https://m.media-amazon.com/images/M/MV5BNzY0ZTlhYzgtOTgzZC00ZTg2LTk4NTEtZDllM2E2NGE5Njg2XkEyXkFqcGc@._V1_SX300.jpg"
                     alt=""
                   ></img>
-                  <img
+                  <img loading="lazy" 
                     className="cl-movie-img"
                     src="https://m.media-amazon.com/images/M/MV5BMTkxNDc3OTcxMV5BMl5BanBnXkFtZTgwODk2NjAzOTE@._V1_SX300.jpg"
                     alt=""
                   ></img>{" "}
-                  <img
+                  <img loading="lazy" 
                     className="cl-movie-img"
                     src="https://m.media-amazon.com/images/M/MV5BOGZjZDk4YTYtMjcyMS00ZTg1LWE5NWUtZDI5M2U4ZDc5MTc5XkEyXkFqcGc@._V1_SX300.jpg"
                     alt=""
                   ></img>{" "}
-                  <img
+                  <img loading="lazy" 
                     className="cl-movie-img"
                     src="https://m.media-amazon.com/images/M/MV5BMjA1MzIwMjMxNF5BMl5BanBnXkFtZTgwMDQ3NTc2MjI@._V1_SX300.jpg"
                     alt=""
                   ></img>{" "}
-                  <img
+                  <img loading="lazy" 
                     className="cl-movie-img"
                     src="https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_SX300.jpg"
                     alt=""
                   ></img>{" "}
-                  <img
+                  <img loading="lazy" 
                     className="cl-movie-img"
                     src="https://m.media-amazon.com/images/M/MV5BMGQxMDdiOWUtYjc1Ni00YzM1LWE2NjMtZTg3Y2JkMjEzMTJjXkEyXkFqcGc@._V1_SX300.jpg"
                     alt=""
                   ></img>
-                  <img
+                  <img loading="lazy" 
                     className="cl-movie-end"
                     src="https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg"
                     alt=""
@@ -196,7 +196,7 @@ function Nav({ setSearchMovie, query, setQuery, setIsWatching }) {
           </div>
         ) : (
           <div style={{ height: " 5rem", padding: "0 3.2rem" }}>
-            <img
+            <img loading="lazy" 
               onClick={() => setIsSearching(true)}
               style={{
                 height: "25px",
@@ -432,7 +432,7 @@ function MovieDetails({
             {/* <button className="cineL-btn-back" onClick={onCloseMovie}>
               &larr;
             </button> */}
-            <img
+            <img loading="lazy" 
               style={{ width: "30%" }}
               src={poster}
               alt={`Poster of ${movie} movie`}
@@ -519,7 +519,7 @@ function WatchedList({ watched, onDeleteWatched }) {
       {watched.map((movie) => (
         <li id="CineL-listItem" key={movie.imdbID}>
           <div>
-            <img
+            <img loading="lazy" 
               style={{ height: "150px", width: "120px" }}
               src={movie.poster}
               alt={`${movie.title} poster`}
